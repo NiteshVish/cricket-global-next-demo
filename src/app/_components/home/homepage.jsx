@@ -25,12 +25,7 @@ export default function homepage() {
                     <span data-text-preloader="G" className="letters-loading">
                         G
                     </span>
-                    {/* <span data-text-preloader="R" className="letters-loading">
-                        R
-                    </span>
-                    <span data-text-preloader="O" className="letters-loading">
-                        O
-                    </span> */}
+                    
                 </div>
                 <p className="text-center">Loading</p>
             </div>
@@ -257,7 +252,6 @@ export default function homepage() {
                             <li>
                               <Link href="/events">Events</Link>
                             </li>
-                            {/* <li> <a href="404.html">404 Page</a> </li> */}
                           </ul>
                         </li>
                         <li>
@@ -265,7 +259,6 @@ export default function homepage() {
                         </li>
                         <li>
                           <Link href="/membership">Membership</Link>
-                          {/* <ul className="submenu"> <li> <a href="news-grid.html">Blog Grid</a> </li> <li> <a href="news.html">Blog Standard</a> </li> <li> <a href="news-details.html">Blog Details</a> </li> </ul> */}
                         </li>
                         <li>
                           <Link href="/contact">Contact</Link>
@@ -276,14 +269,13 @@ export default function homepage() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* <a href="club-ranking.html" className="theme-btn d-none d-xl-block" > Become a Member <i className="fa-solid fa-arrow-up-right"></i> </a> */}
                 <Link href="/contact" className="theme-btn d-none d-xl-block">
                   Become a Member <i className="fa-solid fa-arrow-up-right"></i>
                 </Link>
 
 
                 
-                {/* gfhfg */}
+                
                 <div className="header__hamburger d-xl-block my-auto">
                   <div className="sidebar__toggle">
                     <div className="header-bar">
@@ -717,223 +709,7 @@ export default function homepage() {
       </section>
 
       {/* Ticket Section Start*/}
-      <section
-        className="ticket-section section-padding bg-cover pb-8"
-        style={{
-          backgroundImage: "url('assets/img/home-1/tickets-bg.jpg')",
-        }}
-      >
-        <div className="container">
-          <div className="section-title-area">
-            <div className="section-title hero_title tv_hero_title hero_title_1">
-              <h2>
-                Tickets On Sale – <span>don’t miss</span> out!
-              </h2>
-            </div>
-            <div
-              className="array-button-2 mt-0 d-flex align-items-center wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <button className="array-prev2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="24"
-                  viewBox="0 0 20 24"
-                  fill="none"
-                >
-                  <g opacity="0.72">
-                    <path
-                      d="M15.814 19.4316C16.2646 19.8822 16.9952 19.8822 17.4458 19.4316C17.8964 18.981 17.8964 18.2504 17.4458 17.7998L16.6299 18.6157L15.814 19.4316ZM3.37029 4.20228C2.73304 4.20228 2.21644 4.71887 2.21644 5.35613L2.21644 15.7407C2.21644 16.378 2.73303 16.8946 3.37029 16.8946C4.00754 16.8946 4.52413 16.378 4.52413 15.7407V6.50997H13.7549C14.3922 6.50997 14.9087 5.99338 14.9087 5.35613C14.9087 4.71887 14.3922 4.20228 13.7549 4.20228L3.37029 4.20228ZM16.6299 18.6157L17.4458 17.7998L4.18618 4.54023L3.37029 5.35613L2.55439 6.17202L15.814 19.4316L16.6299 18.6157Z"
-                      fill="#464E5E"
-                    />
-                  </g>
-                </svg>
-              </button>
-              <button className="array-next2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="20"
-                  viewBox="0 0 24 20"
-                  fill="none"
-                >
-                  <g opacity="0.72">
-                    <path
-                      d="M4.56838 15.814C4.11778 16.2646 4.11778 16.9952 4.56838 17.4458C5.01899 17.8964 5.74956 17.8964 6.20017 17.4458L5.38428 16.6299L4.56838 15.814ZM19.7977 3.37029C19.7977 2.73304 19.2811 2.21644 18.6439 2.21644L8.25926 2.21644C7.62201 2.21644 7.10541 2.73303 7.10541 3.37029C7.10541 4.00754 7.62201 4.52413 8.25926 4.52413H17.49V13.7549C17.49 14.3922 18.0066 14.9087 18.6439 14.9087C19.2811 14.9087 19.7977 14.3922 19.7977 13.7549L19.7977 3.37029ZM5.38428 16.6299L6.20017 17.4458L19.4598 4.18618L18.6439 3.37029L17.828 2.55439L4.56838 15.814L5.38428 16.6299Z"
-                      fill="#464E5E"
-                    />
-                  </g>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-xxl-14">
-              <div className="swiper ticket-box-slider">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div className="ticket-box-items">
-                      <span className="circle1"></span>
-                      <span className="circle2"></span>
-                      <div className="circle-list">
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                      </div>
-                      <div className="ticket-left">
-                        <p>
-                          Mon <br />
-                          day
-                        </p>
-                        <span className="number"> 28 </span>
-                        <h6>AUGUST</h6>
-                        <img src="assets/img/home-1/qr-cord.png" alt="img" />
-                      </div>
-                      <div className="content">
-                        <span>
-                          <img src="assets/img/home-1/cup.png" alt="img" />
-                          <b>cLUB world cup, Final</b> Time: 19:05
-                        </span>
-                        <p>Venue: Met Life Stadium</p>
-                        <div className="match-list">
-                          <img
-                            src="assets/img/home-1/ticket/match1.png"
-                            alt="img"
-                          />
-                          <h3>India vs Australia </h3>
-                          <img
-                            src="assets/img/home-1/ticket/match2.png"
-                            alt="img"
-                          />
-                        </div>
-                        <a href="ticket.html" className="theme-btn">
-                          MORE info
-                          <i className="fa-solid fa-arrow-up-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="ticket-box-items">
-                      <span className="circle1"></span>
-                      <span className="circle2"></span>
-                      <div className="circle-list">
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                        <div className="circle-1"></div>
-                      </div>
-                      <div className="ticket-left">
-                        <p>
-                          Mon <br />
-                          day
-                        </p>
-                        <span className="number"> 04 </span>
-                        <h6>AUGUST</h6>
-                        <img src="assets/img/home-1/qr-cord.png" alt="img" />
-                      </div>
-                      <div className="content">
-                        <span>
-                          <img src="assets/img/home-1/cup.png" alt="img" />
-                          <b>cLUB world cup, Final</b> Time: 19:05
-                        </span>
-                        <p>Venue: Met Life Stadium</p>
-                        <div className="match-list">
-                          <img
-                            src="assets/img/home-1/ticket/match1.png"
-                            alt="img"
-                          />
-                          <h3>India vs West Indies</h3>
-                          <img
-                            src="assets/img/home-1/ticket/match2.png"
-                            alt="img"
-                          />
-                        </div>
-                        <a href="ticket.html" className="theme-btn">
-                          MORE info
-                          <i className="fa-solid fa-arrow-up-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className="col-xxl-3 col-md-7 col-lg-12">
-              <div className="ticket-scaner">
-                <h3>Scan Your QR Code</h3>
-                <div className="scaner-thumb">
-                  <img src="assets/img/home-1/scan.png" alt="img" />
-                </div>
-                <a href="ticket.html" className="theme-btn">
-                  Season Passes Available
-                  <i className="fa-solid fa-arrow-up-right"></i>
-                </a>
-              </div>
-            </div> */}
-          </div>
-          {/* <div className="counter-section section-padding pb-0">
-            <div className="counter-wrapper tv-desti-content">
-              <div className="counter-items tv-desti-item">
-                <h6>Copa Del Rey</h6>
-                <div className="icon-box">
-                  <div className="icon">
-                    <img
-                      src="assets/img/home-1/icon/counter-01.svg"
-                      alt="img"
-                    />
-                  </div>
-                  <h2>35</h2>
-                  <p>Trophies</p>
-                </div>
-              </div>
-              <div className="counter-items tv-desti-item">
-                <h6>UEFA Champions League</h6>
-                <div className="icon-box">
-                  <div className="icon">
-                    <img
-                      src="assets/img/home-1/icon/counter-02.svg"
-                      alt="img"
-                    />
-                  </div>
-                  <h2>15</h2>
-                  <p>Trophies</p>
-                </div>
-              </div>
-              <div className="counter-items tv-desti-item">
-                <h6>FIFA Club World Cup</h6>
-                <div className="icon-box">
-                  <div className="icon">
-                    <img
-                      src="assets/img/home-1/icon/counter-03.svg"
-                      alt="img"
-                    />
-                  </div>
-                  <h2>05</h2>
-                  <p>Trophies</p>
-                </div>
-              </div>
-              <div className="counter-items border-none tv-desti-item">
-                <h6>Mondiale per Club</h6>
-                <div className="icon-box">
-                  <div className="icon">
-                    <img
-                      src="assets/img/home-1/icon/counter-04.svg"
-                      alt="img"
-                    />
-                  </div>
-                  <h2>08</h2>
-                  <p>Trophies</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-        </div>
-      </section>
+    
 
       {/* Testimonial Section Start  */}
       <section

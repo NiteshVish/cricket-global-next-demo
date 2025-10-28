@@ -1,11 +1,4 @@
-/*
-Theme Name: Nitro 
-Author: Gramentheme
-Author URI: https://themeforest.net/user/Gramentheme/portfolio
-Description: Nitro - Sports Multipurpose HTML Template
-Service Html Template 
-Version: 1.0.0
-*/
+
 /*==========================================================================
     Table of Contents
 ==========================================================================
@@ -16,7 +9,7 @@ Version: 1.0.0
     01.3 Buttons
     01.4 Typography
 
-02. Template Sections
+02.  Sections
     02.1 About
     02.2 Animation
     02.3 Brand
@@ -34,8 +27,9 @@ Version: 1.0.0
     02.15 Section
     02.16 Team
     02.17 Testimonial
+    */
 
-==========================================================================*/
+
 /*==========================================================================
     01. Basic
 ==========================================================================*/
@@ -4131,7 +4125,8 @@ span {
 .header-main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between
+  ;
   padding: 10px 0;
 }
 .header-main .main-menu ul {
