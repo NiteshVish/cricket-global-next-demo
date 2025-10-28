@@ -170,9 +170,9 @@ export default function Aboutpage() {
                           <Link href="/home">Home</Link>
                         </li>
                         <li className="has-dropdown active d-xl-none">
-                          <a href="/" className="border-none">
+                          <Link href="/" className="border-none">
                             Home
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <Link href="/about">About Us</Link>
