@@ -2,11 +2,57 @@
 import Script from "next/script";
 import React from "react";
 import Link from "next/link";
+import Head from 'next/head'
 
 export default function homepage() {
   return (
+    <>
+      
+    
     <div>
-      {/** script tags */}
+      {/* Preloader Start */}
+       <div id="preloader" className="preloader">
+            <div className="animation-preloader">
+                <div className="spinner">                
+                </div>
+                <div className="txt-loading">
+                    <span data-text-preloader="C" className="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="L" className="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="G" className="letters-loading">
+                        G
+                    </span>
+                    {/* <span data-text-preloader="R" className="letters-loading">
+                        R
+                    </span>
+                    <span data-text-preloader="O" className="letters-loading">
+                        O
+                    </span> */}
+                </div>
+                <p className="text-center">Loading</p>
+            </div>
+            <div className="loader">
+                <div className="row">
+                    <div className="col-3 loader-section section-left">
+                        <div className="bg"></div>
+                    </div>
+                    <div className="col-3 loader-section section-left">
+                        <div className="bg"></div>
+                    </div>
+                    <div className="col-3 loader-section section-right">
+                        <div className="bg"></div>
+                    </div>
+                    <div className="col-3 loader-section section-right">
+                        <div className="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+      {/* script tags */}
       {/* jQuery - Load first as other scripts depend on it */}
       <Script
         src="/assets/js/jquery-3.7.1.min.js"
@@ -148,9 +194,7 @@ export default function homepage() {
                     <div className="offcanvas__contact-icon mr-15">
                       <i className="far fa-phone"></i>
                     </div>
-                    <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
-                    </div>
+                    
                   </li>
                 </ul>
                 <a href="club-ranking.html" className="theme-btn mt-4">
@@ -322,10 +366,10 @@ export default function homepage() {
                   </div>
                   <div className="flag-item">
                     <img
-                      src="assets/img/home-1/match/aston-villa.png"
+                      src="assets/img/home-1/newzeland.png"
                       alt="img"
                     />
-                    <span>Aston Villa</span>
+                    <span>Bangladesh</span>
                   </div>
                 </div>
                 <div className="match-btn">
@@ -369,18 +413,18 @@ export default function homepage() {
                 <p>Premier League , The Legend Stadium</p>
                 <div className="match-schedule">
                   <div className="flag-item">
-                    <img src="assets/img/home-1/match/chelsea.png" alt="img" />
-                    <span>Chelsea</span>
+                    <img src="assets/img/home-1/newzeland.png" alt="img" />
+                    <span>Englan</span>
                   </div>
                   <div className="match-date">
                     <span>19.45</span>
                   </div>
                   <div className="flag-item">
                     <img
-                      src="assets/img/home-1/match/aston-villa.png"
+                      src="assets/img/home-1/newzeland.png"
                       alt="img"
                     />
-                    <span>Aston Villa</span>
+                    <span>India</span>
                   </div>
                 </div>
                 <div className="match-btn">
@@ -424,7 +468,7 @@ export default function homepage() {
                 <p>Premier League , The Legend Stadium</p>
                 <div className="match-schedule">
                   <div className="flag-item">
-                    <img src="assets/img/home-1/match/chelsea.png" alt="img" />
+                    <img src="assets/img/home-1/newzeland.png" alt="img" />
                     <span>Chelsea</span>
                   </div>
                   <div className="match-date">
@@ -432,7 +476,7 @@ export default function homepage() {
                   </div>
                   <div className="flag-item">
                     <img
-                      src="assets/img/home-1/match/aston-villa.png"
+                      src="assets/img/home-1/newzeland.png"
                       alt="img"
                     />
                     <span>Aston Villa</span>
@@ -1350,5 +1394,6 @@ export default function homepage() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
