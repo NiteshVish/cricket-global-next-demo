@@ -5,45 +5,45 @@ import Script from "next/script";
 export default function Aboutpage() {
   return (
     <div>
-      {/** script tags */}
-      {/* jQuery - Load first as other scripts depend on it */}
+      {/** Script tags */}
+      {/* jQuery - Load first as other Scripts depend on it */}
       <Script
         src="/assets/js/jquery-3.7.1.min.js"
         strategy="beforeInteractive"
       ></Script>
 
       {/* All JS Plugins*/}
-      <script src="assets/js/jquery-3.7.1.min.js"></script>
+      <Script src="assets/js/jquery-3.7.1.min.js"></Script>
       {/* Viewport Js*/}
-      <script src="assets/js/viewport.jquery.js"></script>
+      <Script src="assets/js/viewport.jquery.js"></Script>
       {/* Bootstrap Js*/}
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <Script src="assets/js/bootstrap.bundle.min.js"></Script>
       {/* nice-selec Js*/}
-      <script src="assets/js/jquery.nice-select.min.js"></script>
+      <Script src="assets/js/jquery.nice-select.min.js"></Script>
       {/* Waypoints Js*/}
-      <script src="assets/js/jquery.waypoints.js"></script>
+      <Script src="assets/js/jquery.waypoints.js"></Script>
       {/* Counterup Js*/}
-      <script src="assets/js/jquery.counterup.min.js"></script>
+      <Script src="assets/js/jquery.counterup.min.js"></Script>
       {/* Swiper Slider Js*/}
-      <script src="assets/js/swiper-bundle.min.js"></script>
+      <Script src="assets/js/swiper-bundle.min.js"></Script>
       {/* MeanMenu Js*/}
-      <script src="assets/js/jquery.meanmenu.min.js"></script>
+      <Script src="assets/js/jquery.meanmenu.min.js"></Script>
       {/* Parallaxie Js*/}
-      <script src="assets/js/parallaxie.js"></script>
+      <Script src="assets/js/parallaxie.js"></Script>
       {/* Magnific Popup Js*/}
-      <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      <Script src="assets/js/jquery.magnific-popup.min.js"></Script>
       {/* Wow Animation Js*/}
-      <script src="assets/js/wow.min.js"></script>
+      <Script src="assets/js/wow.min.js"></Script>
       {/* Gsap Animation Js*/}
-      <script src="assets/js/gsap.min.js"></script>
+      <Script src="assets/js/gsap.min.js"></Script>
       {/* ScrollTrigger Js*/}
-      <script src="assets/js/ScrollTrigger.min.js"></script>
+      <Script src="assets/js/ScrollTrigger.min.js"></Script>
       {/* SplitText Js*/}
-      <script src="assets/js/SplitText.min.js"></script>
+      <Script src="assets/js/SplitText.min.js"></Script>
       {/* splitType Js*/}
-      <script src="assets/js/splitType.js"></script>
+      <Script src="assets/js/splitType.js"></Script>
       {/* Main.js*/}
-      <script src="assets/js/main.js"></script>
+      <Script src="assets/js/main.js"></Script>
 
       
       {/* Back To Top Start*/}

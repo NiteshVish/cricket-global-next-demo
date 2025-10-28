@@ -11,6 +11,7 @@ import "../../public/assets/css/swiper-bundle.min.css"
 import Providers from "./chakra-providers";
 import StoreProvider from "./store-provider";
 import { ToastContainer } from "react-toastify";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +30,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+
     <html lang="en">
+      <head>
+                           <Script src="/assets/js/main.js" strategy="afterInteractive"></Script> 
+
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+
       >
+
         <StoreProvider>
           <Providers>
             <ToastContainer position="top-right" autoClose={4000} />

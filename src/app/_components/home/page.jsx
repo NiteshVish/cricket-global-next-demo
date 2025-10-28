@@ -11,7 +11,7 @@ const HomeClientPage = () => {
   return (
     <div>
       <HomePage />
-      <Header />
+      {/* <Header /> */}
     </div>
   );
 };

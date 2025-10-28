@@ -67,7 +67,7 @@
         ================================ */
         $(".count").counterUp({
             delay: 15,
-            time: 4000,
+            time: 1000,
         });
   
         /* ================================
@@ -606,16 +606,9 @@
                 $(".preloader").addClass('loaded');                    
                 $(".preloader").delay(600).fadeOut();
             }
-        }, 3000);
+        }, 1000);
         
-        // Manual trigger for testing (remove in production)
-        $(document).keydown(function(e) {
-            if (e.key === 'Escape') {
-                console.log("Manual trigger: hiding preloader");
-                $(".preloader").addClass('loaded');                    
-                $(".preloader").delay(600).fadeOut();
-            }
-        });
+       
     }
     loader();
   

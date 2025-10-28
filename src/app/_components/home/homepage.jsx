@@ -109,7 +109,6 @@ export default function homepage() {
         ></Script>
 
         {/* Main.js - Load last as it depends on all other scripts */}
-        <Script src="/assets/js/main.js" strategy="afterInteractive"></Script>
 
         {/* Back To Top Start*/}
         <button id="back-top" className="back-to-top">

@@ -6,7 +6,7 @@ import Care from "@/app/cares/page";
 export default function Home() {
   return (
     <div>
-      <HomePage />
+      <HomePage/>
       
       {/* <Footer /> */}
     </div>
