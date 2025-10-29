@@ -3297,7 +3297,7 @@ span {
 }
 @media (max-width: 1399px) {
   .playing-result-box2 {
-    height: 500px;
+    /* height: 500px; */
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -3308,7 +3308,7 @@ span {
 }
 .playing-result-box2.style-2 .match-result-box {
   padding-top: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 2px;
   border-top: 1px solid 1px solid rgba(199, 201, 206, 0.24);
 }
 .playing-result-box2 h3 {
@@ -3857,7 +3857,7 @@ span {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
 }
 @media (max-width: 767px) {
   .footer-bottom {

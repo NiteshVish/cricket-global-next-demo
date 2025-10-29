@@ -56,118 +56,99 @@ export default function Aboutpage() {
       <div className="mouseCursor cursor-inner"></div>
 
       {/* Offcanvas Area Start*/}
-      <div className="fix-area">
-        <div className="offcanvas__info">
-          <div className="offcanvas__wrapper">
-            <div className="offcanvas__content">
-              <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                <div className="offcanvas__logo">
-                  <Link href="/home">
-                    <img src="assets/images/LogoBase2.png" alt="logo-img" />
+        <div className="fix-area">
+          <div className="offcanvas__info">
+            <div className="offcanvas__wrapper">
+              <div className="offcanvas__content">
+                <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                  <div className="offcanvas__logo">
+                    <Link href="/">
+                      <img src="assets/images/LogoBase2.png" alt="logo-img" />
+                    </Link>
+                  </div>
+                  <div className="offcanvas__close">
+                    <button>
+                      <i className="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <p className="text d-none d-xl-block">
+                  We at Cricket Lovers Global take pride in equally supporting
+                  men and women cricket. In fact, promoting and creating
+                  awareness about women cricket is very close to our heart.
+                </p>
+                <div className="mobile-menu fix mb-3"></div>
+                <div className="sidebar-image mt-4 d-none d-xl-block">
+                  <img
+                    className="w-100"
+                    src="assets/img/sidebar-image.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div className="offcanvas__contact">
+                  <h4>Contact Info</h4>
+                  <ul>
+                    <li className="d-flex align-items-center">
+                      <div className="offcanvas__contact-icon">
+                        <i className="fal fa-map-marker-alt"></i>
+                      </div>
+                      <div className="offcanvas__contact-text">
+                        <a target="_blank" href="/contact">
+                          20 Berne Rd, Thornton Heath CR7 7BG, United Kingdom
+                        </a>
+                      </div>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <div className="offcanvas__contact-icon mr-15">
+                        <i className="fal fa-envelope"></i>
+                      </div>
+                      <div className="offcanvas__contact-text">
+                        <a href="info@cricketloversglobal.com">
+                          <span className="info@cricketloversglobal.com">
+                            info@cricketloversglobal.com
+                          </span>
+                        </a>
+                      </div>
+                    </li>
+                    
+                    
+                  </ul>
+                  <Link href="/membership" className="theme-btn mt-4">
+                    JOIN NOW <i className="fa-solid fa-arrow-up-right"></i>
                   </Link>
-                </div>
-                <div className="offcanvas__close">
-                  <button>
-                    <i className="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <p className="text d-none d-xl-block">
-                Nullam dignissim, ante scelerisque the is euismod fermentum odio
-                sem semper the is erat, a feugiat leo urna eget eros. Duis
-                Aenean a imperdiet risus.
-              </p>
-              <div className="mobile-menu fix mb-3"></div>
-              <div className="sidebar-image mt-4 d-none d-xl-block">
-                <img
-                  className="w-100"
-                  src="assets/img/sidebar-image.jpg"
-                  alt="img"
-                />
-              </div>
-              <div className="offcanvas__contact">
-                <h4>Contact Info</h4>
-                <ul>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon">
-                      <i className="fal fa-map-marker-alt"></i>
-                    </div>
-                    <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                        Main Street, Melbourne, Australia
-                      </a>
-                    </div>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon mr-15">
-                      <i className="fal fa-envelope"></i>
-                    </div>
-                    <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">
-                        <span className="mailto:info@example.com">
-                          info@example.com
-                        </span>
-                      </a>
-                    </div>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon mr-15">
-                      <i className="fal fa-clock"></i>
-                    </div>
-                    <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                        Mod-friday, 09am -05pm
-                      </a>
-                    </div>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <div className="offcanvas__contact-icon mr-15">
-                      <i className="far fa-phone"></i>
-                    </div>
-                    <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
-                    </div>
-                  </li>
-                </ul>
-                <a href="club-ranking.html" className="theme-btn mt-4">
-                  JOIN NOW <i className="fa-solid fa-arrow-up-right"></i>
-                </a>
-                <div className="social-icon d-flex align-items-center">
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
+                  <div className="social-icon d-flex align-items-center">
+                  <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                  <a href="https://x.com/CricketLoversG">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                  <a href="https://www.instagram.com/cricketloversglobal/">
+                    <i className="fab fa-instagram"></i>
+                    </a>
+                    
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="offcanvas__overlay"></div>
-
+        <div className="offcanvas__overlay"></div>
       {/* Header Section Start*/}
       <header id="header-sticky" className="header-1">
         <div className="container">
           <div className="mega-menu-wrapper">
             <div className="header-main">
-              <a href="index.html" className="logo">
+              <Link href="/home" className="logo">
                 <img src="assets/images/Logo.webp" alt="img" />
-              </a>
+              </Link>
               <div className="header-left">
                 <div className="mean__menu-wrapper">
                   <div className="main-menu">
                     <nav id="mobile-menu">
                       <ul>
                         <li className="has-dropdown active menu-thumb">
-                          <Link href="/home">Home</Link>
+                          <Link href="/">Home</Link>
                         </li>
                         <li className="has-dropdown active d-xl-none">
                           <Link href="/" className="border-none">
@@ -181,7 +162,7 @@ export default function Aboutpage() {
                           <a href="/home"> Pages </a>
                           <ul className="submenu">
                             <li>
-                              <Link href="/about">About Us</Link>
+                                <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
                             </li>
                             <li>
                               <Link href="/cares">Cares</Link>
@@ -189,7 +170,6 @@ export default function Aboutpage() {
                             <li>
                               <Link href="/events">Events</Link>
                             </li>
-                            {/* <li> <a href="404.html">404 Page</a> </li> */}
                           </ul>
                         </li>
                         <li>
@@ -197,7 +177,6 @@ export default function Aboutpage() {
                         </li>
                         <li>
                           <Link href="/membership">Membership</Link>
-                          {/* <ul className="submenu"> <li> <a href="news-grid.html">Blog Grid</a> </li> <li> <a href="news.html">Blog Standard</a> </li> <li> <a href="news-details.html">Blog Details</a> </li> </ul> */}
                         </li>
                         <li>
                           <Link href="/contact">Contact</Link>
@@ -208,7 +187,6 @@ export default function Aboutpage() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                {/* <a href="club-ranking.html" className="theme-btn d-none d-xl-block" > Become a Member <i className="fa-solid fa-arrow-up-right"></i> </a> */}
                 <Link href="/contact" className="theme-btn d-none d-xl-block">
                   Become a Member <i className="fa-solid fa-arrow-up-right"></i>
                 </Link>
@@ -243,7 +221,7 @@ export default function Aboutpage() {
               data-wow-delay=".5s"
             >
               <li>
-                <a href="/home">Home</a>
+                <Link href="/home">Home</Link>
               </li>
               <li>
                 <i className="fa-solid fa-chevron-right"></i>
@@ -321,13 +299,13 @@ export default function Aboutpage() {
                                     <h3>/05:01</h3>
                                     <p>Player -To- Cooch Ratio</p>
                                 </div> */}
-                  <a
-                    href="team.html"
+                  <Link
+                    href="/membership"
                     className="theme-btn wow fadeInUp"
                     data-wow-delay=".8s"
                   >
-                    Join the club <i className="fa-solid fa-arrow-up-right"></i>
-                  </a>
+                    Join now <i className="fa-solid fa-arrow-up-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -504,7 +482,7 @@ export default function Aboutpage() {
       </section>
 
       {/* Brand Section Start*/}
-      <section className="brand-section-3 section-bg section-padding">
+      {/* <section className="brand-section-3 section-bg section-padding">
         <div className="container">
           <div className="section-title text-center hero_title tv_hero_title hero_title_1">
             <h2>Our Partners</h2>
@@ -544,7 +522,7 @@ export default function Aboutpage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* banner  */}
 
@@ -1046,14 +1024,13 @@ export default function Aboutpage() {
             <h3>
               Join <br /> Cricket Lovers Global <br /> Newsletter​
             </h3>
-            {/* <div><p>Become part of the incredible community and be
-               among the first to know of events, offers and more.</p></div> */}
-
+            
             <form action="#">
               <input type="text" placeholder="Your Email Address" />
+              <Link href="/membership">
               <button className="theme-btn" type="submit">
-                sing up now <i className="fa-solid fa-arrow-up-right"></i>
-              </button>
+                sign up now <i className="fa-solid fa-arrow-up-right"></i>
+              </button></Link>
             </form>
             <div className="footer-right">
               <h3>
@@ -1062,18 +1039,16 @@ export default function Aboutpage() {
               <h3>social network</h3>
               <div className="social-right">
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://x.com/CricketLoversG">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="#">
-                    <i className="fab fa-vimeo-v"></i>
+                  <a href="https://www.instagram.com/cricketloversglobal/">
+  <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="#">
-                    <i className="fab fa-pinterest-p"></i>
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -1105,16 +1080,16 @@ export default function Aboutpage() {
                   </div>
                   <ul className="list-area">
                     <li>
-                      <a href="about.html">About</a>
+                      <Link href="/about">About</Link>
                     </li>
                     <li>
-                      <a href="about.html">Membership</a>
+                      <Link href="/membership">Membership</Link>
                     </li>
                     <li>
-                      <a href="about.html">Events</a>
+                      <Link href="/events">Events</Link>
                     </li>
                     <li>
-                      <a href="team.html">CLG Academy</a>
+                      <Link href="https://clgacademy.co.uk/">CLG Academy</Link>
                     </li>
                   </ul>
                 </div>
@@ -1129,7 +1104,7 @@ export default function Aboutpage() {
                   </div>
                   <ul className="footer-contact-list">
                     <li>
-                      <a href="tel:+12318005678990"> Contact us</a>
+                      <Link href="/contact"> Contact us</Link>
                     </li>
                     <li>
                       <a href="info@cricketloversglobal.com">
@@ -1143,15 +1118,7 @@ export default function Aboutpage() {
                 className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
                 data-wow-delay=".8s"
               >
-                <div className="footer-widget-items">
-                  <div className="widget-head">
-                    <h3>download our Club</h3>
-                  </div>
-                  <div className="app-items">
-                    <img src="assets/img/google-play.png" alt="img" />
-                    <img src="assets/img/app-store.png" alt="img" />
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -1159,17 +1126,7 @@ export default function Aboutpage() {
             <p className="wow fadeInLeft" data-wow-delay=".3s">
               © 2025<b> CRICKET LOVERS GLOBAL</b>. All Rights Reserved.
             </p>
-            <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
-              <li>
-                <a href="contact.html"> Cookies </a>
-              </li>
-              <li>
-                <a href="contact.html"> Privacy </a>
-              </li>
-              <li>
-                <a href="contact.html"> Terms </a>
-              </li>
-            </ul>
+            
           </div>
         </div>
       </footer>

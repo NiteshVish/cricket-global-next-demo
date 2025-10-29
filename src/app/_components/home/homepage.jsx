@@ -126,7 +126,7 @@ export default function homepage() {
               <div className="offcanvas__content">
                 <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                   <div className="offcanvas__logo">
-                    <Link href="/home">
+                    <Link href="/">
                       <img src="assets/images/LogoBase2.png" alt="logo-img" />
                     </Link>
                   </div>
@@ -157,8 +157,8 @@ export default function homepage() {
                         <i className="fal fa-map-marker-alt"></i>
                       </div>
                       <div className="offcanvas__contact-text">
-                        <a target="_blank" href="#">
-                          Main Street, Melbourne, Australia
+                        <a target="_blank" href="/contact">
+                          20 Berne Rd, Thornton Heath CR7 7BG, United Kingdom
                         </a>
                       </div>
                     </li>
@@ -167,45 +167,30 @@ export default function homepage() {
                         <i className="fal fa-envelope"></i>
                       </div>
                       <div className="offcanvas__contact-text">
-                        <a href="mailto:info@example.com">
-                          <span className="mailto:info@example.com">
-                            info@example.com
+                        <a href="info@cricketloversglobal.com">
+                          <span className="info@cricketloversglobal.com">
+                            info@cricketloversglobal.com
                           </span>
                         </a>
                       </div>
                     </li>
-                    <li className="d-flex align-items-center">
-                      <div className="offcanvas__contact-icon mr-15">
-                        <i className="fal fa-clock"></i>
-                      </div>
-                      <div className="offcanvas__contact-text">
-                        <a target="_blank" href="#">
-                          Mod-friday, 09am -05pm
-                        </a>
-                      </div>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <div className="offcanvas__contact-icon mr-15">
-                        <i className="far fa-phone"></i>
-                      </div>
-                    </li>
+                    
+                    
                   </ul>
-                  <a href="club-ranking.html" className="theme-btn mt-4">
+                  <Link href="/membership" className="theme-btn mt-4">
                     JOIN NOW <i className="fa-solid fa-arrow-up-right"></i>
-                  </a>
+                  </Link>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
+                  <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                  <a href="https://x.com/CricketLoversG">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
-                      <i className="fab fa-youtube"></i>
+                  <a href="https://www.instagram.com/cricketloversglobal/">
+                    <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -219,9 +204,9 @@ export default function homepage() {
           <div className="container">
             <div className="mega-menu-wrapper">
               <div className="header-main">
-                <a href="index.html" className="logo">
+                <Link href="/" className="logo">
                   <img src="assets/images/Logo.webp" alt="img" />
-                </a>
+                </Link>
                 <div className="header-left">
                   <div className="mean__menu-wrapper">
                     <div className="main-menu">
@@ -242,7 +227,7 @@ export default function homepage() {
                             <a href="/home"> Pages </a>
                             <ul className="submenu">
                               <li>
-                                <Link href="/about">About Us</Link>
+                                <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
                               </li>
                               <li>
                                 <Link href="/cares">Cares</Link>
@@ -267,7 +252,7 @@ export default function homepage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  <Link href="/contact" className="theme-btn d-none d-xl-block">
+                  <Link href="/membership" className="theme-btn d-none d-xl-block">
                     Become a Member{" "}
                     <i className="fa-solid fa-arrow-up-right"></i>
                   </Link>
@@ -311,12 +296,12 @@ export default function homepage() {
                     who share a passion for the sport.
                   </p>
                   <div className="hero-btn wow fadeInUp" data-wow-delay=".5s">
-                    <a href="/contact" className="theme-btn">
+                    <Link href="/membership" className="theme-btn">
                       SignUP <i className="fa-solid fa-arrow-up-right"></i>
-                    </a>
-                    <a href="/about" className="theme-btn bg-white">
+                    </Link>
+                    <Link href="/about" className="theme-btn bg-white">
                       Learn more <i className="fa-solid fa-arrow-up-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1015,147 +1000,126 @@ export default function homepage() {
         </section>
 
         {/* Footer Section Start*/}
-        <footer
-          className="footer-section section-padding pb-0 bg-cover"
-          style={{
-            backgroundImage: "url('assets/img/home-1/footer-bg.jpg')",
-          }}
-        >
-          <div className="container">
-            <div
-              className="footer-subscribe-wrapper wow fadeInUp"
-              data-wow-delay=".3s"
-            >
+      <footer
+        className="footer-section section-padding pb-0 bg-cover"
+        style={{
+          backgroundImage: "url('assets/img/home-1/footer-bg.jpg')",
+        }}
+      >
+        <div className="container">
+          <div
+            className="footer-subscribe-wrapper wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <h3>
+              Join <br /> Cricket Lovers Global <br /> Newsletter​
+            </h3>
+            
+            <form action="#">
+              <input type="text" placeholder="Your Email Address" />
+              <Link href="/membership">
+              <button className="theme-btn" type="submit">
+                sign up now <i className="fa-solid fa-arrow-up-right"></i>
+              </button></Link>
+            </form>
+            <div className="footer-right">
               <h3>
-                Join <br /> Cricket Lovers Global <br /> Newsletter​
+                Follow our <br />
               </h3>
-              {/* <div><p>Become part of the incredible community and be
-               among the first to know of events, offers and more.</p></div> */}
-
-              <form action="#">
-                <input type="text" placeholder="Your Email Address" />
-                <button className="theme-btn" type="submit">
-                  sing up now <i className="fa-solid fa-arrow-up-right"></i>
-                </button>
-              </form>
-              <div className="footer-right">
-                <h3>
-                  Follow our <br />
-                </h3>
-                <h3>social network</h3>
-                <div className="social-right">
-                  <div className="social-icon d-flex align-items-center">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-vimeo-v"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                  </div>
+              <h3>social network</h3>
+              <div className="social-right">
+                <div className="social-icon d-flex align-items-center">
+                  <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://x.com/CricketLoversG">
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/cricketloversglobal/">
+  <i className="fab fa-instagram"></i>
+                  </a>
+                  
                 </div>
               </div>
-            </div>
-            <div className="footer-widget-wrapper">
-              <div className="row justify-content-between">
-                <div
-                  className="col-xl-4 col-lg-8 col-md-8 wow fadeInUp"
-                  data-wow-delay=".2s"
-                >
-                  <div className="footer-widget-items">
-                    <div className="widget-head">
-                      <a href="index.html">
-                        <img src="assets/images/LogoBase2.png" alt="img" />
-                      </a>
-                    </div>
-                    <div className="footer-content">
-                      <p className="mb-3">Passion beyond boundaries.</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-xl-2 ps-lg-5 col-lg-4 col-md-4 wow fadeInUp"
-                  data-wow-delay=".4s"
-                >
-                  <div className="footer-widget-items">
-                    <div className="widget-head">
-                      <h3>Our Links</h3>
-                    </div>
-                    <ul className="list-area">
-                      <li>
-                        <a href="about.html">About</a>
-                      </li>
-                      <li>
-                        <a href="about.html">Membership</a>
-                      </li>
-                      <li>
-                        <a href="about.html">Events</a>
-                      </li>
-                      <li>
-                        <a href="team.html">CLG Academy</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div
-                  className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay=".6s"
-                >
-                  <div className="footer-widget-items">
-                    <div className="widget-head">
-                      <h3>Get in Touch </h3>
-                    </div>
-                    <ul className="footer-contact-list">
-                      <li>
-                        <a href="tel:+12318005678990"> Contact us</a>
-                      </li>
-                      <li>
-                        <a href="info@cricketloversglobal.com">
-                          info@cricketloversglobal.com
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div
-                  className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay=".8s"
-                >
-                  <div className="footer-widget-items">
-                    <div className="widget-head">
-                      <h3>download our Club</h3>
-                    </div>
-                    <div className="app-items">
-                      <img src="assets/img/google-play.png" alt="img" />
-                      <img src="assets/img/app-store.png" alt="img" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="footer-bottom">
-              <p className="wow fadeInLeft" data-wow-delay=".3s">
-                © 2025<b> CRICKET LOVERS GLOBAL</b>. All Rights Reserved.
-              </p>
-              <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                <li>
-                  <a href="contact.html"> Cookies </a>
-                </li>
-                <li>
-                  <a href="contact.html"> Privacy </a>
-                </li>
-                <li>
-                  <a href="contact.html"> Terms </a>
-                </li>
-              </ul>
             </div>
           </div>
-        </footer>
+          <div className="footer-widget-wrapper">
+            <div className="row justify-content-between">
+              <div
+                className="col-xl-4 col-lg-8 col-md-8 wow fadeInUp"
+                data-wow-delay=".2s"
+              >
+                <div className="footer-widget-items">
+                  <div className="widget-head">
+                    <a href="index.html">
+                      <img src="assets/images/LogoBase2.png" alt="img" />
+                    </a>
+                  </div>
+                  <div className="footer-content">
+                    <p className="mb-3">Passion beyond boundaries.</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-xl-2 ps-lg-5 col-lg-4 col-md-4 wow fadeInUp"
+                data-wow-delay=".4s"
+              >
+                <div className="footer-widget-items">
+                  <div className="widget-head">
+                    <h3>Our Links</h3>
+                  </div>
+                  <ul className="list-area">
+                    <li>
+                      <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                      <Link href="/membership">Membership</Link>
+                    </li>
+                    <li>
+                      <Link href="/events">Events</Link>
+                    </li>
+                    <li>
+                      <Link href="https://clgacademy.co.uk/">CLG Academy</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay=".6s"
+              >
+                <div className="footer-widget-items">
+                  <div className="widget-head">
+                    <h3>Get in Touch </h3>
+                  </div>
+                  <ul className="footer-contact-list">
+                    <li>
+                      <Link href="/contact"> Contact us</Link>
+                    </li>
+                    <li>
+                      <a href="info@cricketloversglobal.com">
+                        info@cricketloversglobal.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay=".8s"
+              >
+                
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p className="wow fadeInLeft" data-wow-delay=".3s">
+              © 2025<b> CRICKET LOVERS GLOBAL</b>. All Rights Reserved.
+            </p>
+            
+          </div>
+        </div>
+      </footer>
       </div>
     </>
   );
