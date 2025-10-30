@@ -204,7 +204,7 @@ export default function homepage() {
           <div className="container">
             <div className="mega-menu-wrapper">
               <div className="header-main">
-                <Link href="/" className="logo">
+                <Link href="/home" className="logo">
                   <img src="assets/images/Logo.webp" alt="img" />
                 </Link>
                 <div className="header-left">
@@ -213,7 +213,7 @@ export default function homepage() {
                       <nav id="mobile-menu">
                         <ul>
                           <li className="has-dropdown active menu-thumb">
-                            <Link href="/home">Home</Link>
+                            <Link href="/about">about</Link>
                           </li>
                           <li className="has-dropdown active d-xl-none ">
                             <Link href="/" className="border-none">
@@ -221,21 +221,16 @@ export default function homepage() {
                             </Link>
                           </li>
                           <li >
-                            <Link href="/about">About Us</Link>
+                            <Link href="/cares">Cares</Link>
                           </li>
-                          <li className="has-dropdown">
-                            <a href="/home"> Pages </a>
-                            <ul className="submenu">
-                              <li>
+                          <li>
                                 <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
                               </li>
-                              <li>
-                                <Link href="/cares">Cares</Link>
-                              </li>
-                              <li>
-                                <Link href="/events">Events</Link>
-                              </li>
-                            </ul>
+                          <li className="has-dropdown">
+                            <a href="/events"> Events </a>
+                            
+                      
+                            
                           </li>
                           <li>
                             <Link href="/gallery">Gallery</Link>
@@ -252,7 +247,7 @@ export default function homepage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  <Link href="/membership" className="theme-btn d-none d-xl-block">
+                  <Link href="/login" className="theme-btn d-none d-xl-block">
                     Become a Member{" "}
                     <i className="fa-solid fa-arrow-up-right"></i>
                   </Link>
