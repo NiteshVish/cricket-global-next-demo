@@ -17,6 +17,14 @@ export const HttpMethod = {
         login:{
             Method:HttpMethod.Post,
             Endpoint:"auth/login"
+        },
+        reset:{
+            Method:HttpMethod.Post,
+            Endpoint:"auth/reset-password"
+        },
+        forget:{
+            Method:HttpMethod.Post,
+            Endpoint:"auth/forget-password"
         }
     }
 }

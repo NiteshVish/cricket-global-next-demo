@@ -57,6 +57,23 @@ class Auth extends HttpClient {
       data: reqBody,
     });
   };
+  // reset password 
+  resetPass = async (reqBody) => {
+    return this.instance({
+      method: ApiRoutes.auth.reset.Method,
+      url: ApiRoutes.auth.reset.Endpoint,
+      data: reqBody,
+    });
+  };
+  // forget password
+
+  forgetPass = async (reqBody) => {
+    return this.instance({
+      method: ApiRoutes.auth.forget.Method,
+      url: ApiRoutes.auth.forget.Endpoint,
+      data: reqBody,
+    });
+  };
 
 }
 
