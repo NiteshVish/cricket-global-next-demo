@@ -247,10 +247,14 @@ export default function homepage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  <Link href="/login" className="theme-btn d-none d-xl-block">
+                  {/* <Link href="/login" className="theme-btn d-none d-xl-block">
                     Become a Member{" "}
+                    
                     <i className="fa-solid fa-arrow-up-right"></i>
-                  </Link>
+                  </Link> */}
+                  <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
+                      Login <span style={{fontWeight:"40px"}}>/ </span>Signup
+                    </Link>
 
                   <div className="header__hamburger d-xl-block my-auto">
                     <div className="sidebar__toggle">
@@ -291,7 +295,7 @@ export default function homepage() {
                     who share a passion for the sport.
                   </p>
                   <div className="hero-btn wow fadeInUp" data-wow-delay=".5s">
-                    <Link href="/membership" className="theme-btn">
+                    <Link href="/login" className="theme-btn">
                       SignUP <i className="fa-solid fa-arrow-up-right"></i>
                     </Link>
                     <Link href="/about" className="theme-btn bg-white">

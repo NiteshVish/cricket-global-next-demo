@@ -1,84 +1,73 @@
 import React from 'react';
+import Signup from '../signup/signup';
 
 export default function Login() {
-    return (
-        
+  return (
+    <section className="main-container-login1">
+      <div className="container1">
+        <div className="form-box1">
+          <img
+            src="assets/images/Logo.webp"
+            alt="Cricket Lovers Global Logo"
+            className="logo1"
+          />
+          <h3>LOGIN</h3>
 
-  
-<section className='main-container-login'>
-    <div className="login-container">
-      <div className="login-box">
-        <img src="./assets/images/Logo.webp" alt="Cricket Lovers Global Logo" className="logo" />
-        <h1>Login</h1>
+          <form>
+            {/* Firstname + Lastname */}
+            <div className="row1">
+              <div className="input-group1">
+                <label>FIRSTNAME</label>
+                <input type="text" placeholder="Enter your first name" />
+              </div>
+              <div className="input-group1">
+                <label>LASTNAME</label>
+                <input type="text" placeholder="Enter your last name" />
+              </div>
+            </div>
 
-        <form className='form-class'>
-          <div className='form-1'>
-            <div className="input-group">
-            <label for="email">FirstName</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <label for="email">LastName</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          </div>
+            {/* Email + Country */}
+            <div className="row1">
+              <div className="input-group1">
+                <label>EMAIL</label>
+                <input type="email" placeholder="Enter your email" />
+              </div>
+              <div className="input-group1">
+                <label>COUNTRY</label>
+                <select>
+                  <option value="">Select your country</option>
+                  <option value="IN">India</option>
+                  <option value="US">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="AU">Australia</option>
+                  <option value="CA">Canada</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="SA">South Africa</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="SL">Sri Lanka</option>
+                  <option value="OTHER">Other</option>
+                </select>
+              </div>
+            </div>
 
-          <div className='form-2'>
-            <div className="input-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <label for="password">Confirm Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
-          </div>
-</form>
-          <button type="submit" className="btn">Login</button>
+            {/* Password + Confirm Password */}
+            <div className="row1">
+              <div className="input-group1">
+                <label>PASSWORD</label>
+                <input type="password" placeholder="Enter your password" />
+              </div>
+              
+            </div>
 
-          <p className="signup-text">
-            Don't have an account?
-            <a href="#" className="signup-link">Sign up</a>
-          </p>
-        
+            <button type="submit" className="btn1">Login</button>
+
+            <p className="signup-text1">
+              DON'T HAVE AN ACCOUNT? <a href="/signup">SIGN UP</a>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
-    
-  </section>
-  
-
-
-            
-        
-    );
+    </section>
+  );
 }
-
