@@ -67,6 +67,7 @@
   display: inline-block;
   padding: 0 34px;
   color: var(--white);
+  border-radius: 6px;
 }
 @media (max-width: 575px) {
   .theme-btn {
@@ -444,7 +445,7 @@ span {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #FFEEE7;
+  background-color: white;
   /* background-color: black; */
   text-align: center;
   line-height: 100px;
@@ -8191,7 +8192,7 @@ span {
   background: #fff;
   padding: 40px;
   border-radius: 15px;
-  width: 700px; /* Wider for 2-column layout */
+  width: 400px; /* Wider for 2-column layout */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }

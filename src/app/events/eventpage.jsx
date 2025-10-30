@@ -156,74 +156,69 @@ export default function Eventpage() {
        
         
         {/* Header Section Start*/}
-     <header id="header-sticky" className="header-1">
-          <div className="container">
-            <div className="mega-menu-wrapper">
-              <div className="header-main">
-                <Link href="/home" className="logo">
-                  <img src="assets/images/Logo.webp" alt="img" />
-                </Link>
-                <div className="header-left">
-                  <div className="mean__menu-wrapper">
-                    <div className="main-menu">
-                      <nav id="mobile-menu">
-                        <ul>
-                          <li className="has-dropdown active menu-thumb">
-                            <Link href="/about">about</Link>
-                          </li>
-                          <li className="has-dropdown active d-xl-none ">
-                            <Link href="/" className="border-none">
-                              Home
-                            </Link>
-                          </li>
-                          <li >
-                            <Link href="/cares">Cares</Link>
-                          </li>
-                          <li>
-                                <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
-                              </li>
-                          <li className="has-dropdown">
-                            <a href="/events"> Events </a>
-                            
-                      
-                            
-                          </li>
-                          <li>
-                            <Link href="/gallery">Gallery</Link>
-                          </li>
-                          <li>
-                            <Link href="/membership">Membership</Link>
-                          </li>
-                          <li>
-                            <Link href="/contact">Contact</Link>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-                <div className="header-right d-flex justify-content-end align-items-center">
-                  {/* <Link href="/login" className="theme-btn d-none d-xl-block">
-                    Become a Member{" "}
-                    
-                    <i className="fa-solid fa-arrow-up-right"></i>
-                  </Link> */}
-                  <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
-                      Login <span style={{fontWeight:"40px"}}>/ </span>Signup
-                    </Link>
-
-                  <div className="header__hamburger d-xl-block my-auto">
-                    <div className="sidebar__toggle">
-                      <div className="header-bar">
-                        <span></span> <span></span>
+                <header id="header-sticky" className="header-1">
+                  <div className="container">
+                    <div className="mega-menu-wrapper">
+                      <div className="header-main">
+                        <Link href="/home" className="logo">
+                          <img src="assets/images/Logo.webp" alt="img" />
+                        </Link>
+                        <div className="header-left">
+                          <div className="mean__menu-wrapper">
+                            <div className="main-menu">
+                              <nav id="mobile-menu">
+                                <ul>
+                                  <li className="has-dropdown active menu-thumb">
+                                    <Link href="/about">about</Link>
+                                  </li>
+                                  <li className="has-dropdown active d-xl-none ">
+                                    <Link href="/" className="border-none">
+                                      Home
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link href="/cares">Cares</Link>
+                                  </li>
+                                  <li>
+                                    <Link href="https://clgacademy.co.uk/">
+                                      Clg-Academy
+                                    </Link>
+                                  </li>
+                                  <li className="has-dropdown">
+                                    <a href="/events"> Events </a>
+                                  </li>
+                                  <li>
+                                    <Link href="/gallery">Gallery</Link>
+                                  </li>
+                                  <li>
+                                    <Link href="/membership">Membership</Link>
+                                  </li>
+                                  <li>
+                                    <Link href="/contact">Contact</Link>
+                                  </li>
+                                </ul>
+                              </nav>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="header-right d-flex justify-content-end align-items-center">
+                          <Link href="/login" className="theme-btn d-none d-xl-block">
+                            Login/Signup
+                          </Link>
+                          
+        
+                          <div className="header__hamburger d-xl-block my-auto">
+                            <div className="sidebar__toggle">
+                              <div className="header-bar">
+                                <span></span> <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
+                </header>
 
         <div className="gt-breadcrumb-wrapper bg-cover" style={{backgroundImage: "url('assets/img/breadcrumb-bg.jpg')"}}>
             <div className="container">

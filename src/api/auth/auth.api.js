@@ -1,9 +1,7 @@
-import ApiRoutes from "../../config/endpoint.config"; // Import the API Routes
+import { getTokenLocal } from "@/utils/localStorage.util";
+import ApiRoutes from "../../configs/endpoints.config"; // Import the API Routes
 import HttpClient from "../index.api";
-import { decryptData, encryptData } from "../../utils/encryptdecrypt";
 import { toast } from "react-toastify";
-import { getTokenLocal } from "@localStorage.util";
-
 const baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 class Auth extends HttpClient {
@@ -28,7 +26,7 @@ class Auth extends HttpClient {
       async (response) => {
         let data;
         if (response) {
-          data = await decryptData(response); // Decrypt response body
+          data = await response; // Decrypt response body
           if (data.status == "success") {
           } else if (data.status == "fail") {
             toast.error(data.message);
@@ -46,12 +44,22 @@ class Auth extends HttpClient {
   // **Auth APIs with Encrypted Requests**
   login = async (reqBody) => {
     return this.instance({
-      method: ApiRoutes.Auth.Login.Method,
-      url: ApiRoutes.Auth.Login.Endpoint,
-      data: encryptData(reqBody),
+      method: ApiRoutes.auth.login.Method,
+      url: ApiRoutes.auth.login.Endpoint,
+      data: reqBody,
     });
   };
+  // signup
+  signup = async (reqBody) => {
+    return this.instance({
+      method: ApiRoutes.auth.signup.Method,
+      url: ApiRoutes.auth.signup.Endpoint,
+      data: reqBody,
+    });
+  };
+
 }
+
 
 //  Export an instance of the `Auth` class
 const authInstance = new Auth();

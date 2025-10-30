@@ -135,7 +135,7 @@ export default function Aboutpage() {
         </div>
         <div className="offcanvas__overlay"></div>
       {/* Header Section Start*/}
-      <header id="header-sticky" className="header-1">
+        <header id="header-sticky" className="header-1">
           <div className="container">
             <div className="mega-menu-wrapper">
               <div className="header-main">
@@ -155,17 +155,16 @@ export default function Aboutpage() {
                               Home
                             </Link>
                           </li>
-                          <li >
+                          <li>
                             <Link href="/cares">Cares</Link>
                           </li>
                           <li>
-                                <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
-                              </li>
+                            <Link href="https://clgacademy.co.uk/">
+                              Clg-Academy
+                            </Link>
+                          </li>
                           <li className="has-dropdown">
                             <a href="/events"> Events </a>
-                            
-                      
-                            
                           </li>
                           <li>
                             <Link href="/gallery">Gallery</Link>
@@ -182,14 +181,10 @@ export default function Aboutpage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  {/* <Link href="/login" className="theme-btn d-none d-xl-block">
-                    Become a Member{" "}
-                    
-                    <i className="fa-solid fa-arrow-up-right"></i>
-                  </Link> */}
-                  <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
-                      Login <span style={{fontWeight:"40px"}}>/ </span>Signup
-                    </Link>
+                  <Link href="/login" className="theme-btn d-none d-xl-block">
+                    Login/Signup
+                  </Link>
+                  
 
                   <div className="header__hamburger d-xl-block my-auto">
                     <div className="sidebar__toggle">
@@ -253,13 +248,13 @@ export default function Aboutpage() {
                       />
                       <div className="ball-cicrle">
                         <img
-                          src="assets/img/home-2/about/ball.png"
+                          src="assets/images/Ball3.jpg"
                           alt="img/"
                         />
                       </div>
                     </div>
                   </div>
-                  <div className="about-sm-img">
+                  {/* <div className="about-sm-img">
                     <img src="assets/img/home-2/about/about-02.png" alt="img" />
                     <div className="img">
                       <img
@@ -267,13 +262,13 @@ export default function Aboutpage() {
                         alt="img"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="about-content">
                   <div className="section-title mb-0">
-                    <h6 className="wow fadeInUp">About</h6>
+                    {/* <h6 className="wow fadeInUp">About</h6> */}
                     <h2 className="hero_title tv_hero_title hero_title_1">
                       What is <span>Cricket Lovers Global?</span>
                     </h2>

@@ -224,14 +224,13 @@ export default function Carespage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  {/* <Link href="/login" className="theme-btn d-none d-xl-block">
-                    Become a Member{" "}
+                 <Link href="/login" className="theme-btn d-none d-xl-block">
+                    login/Signup
                     
-                    <i className="fa-solid fa-arrow-up-right"></i>
-                  </Link> */}
-                  <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
+                  </Link> 
+                  {/* <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
                       Login <span style={{fontWeight:"40px"}}>/ </span>Signup
-                    </Link>
+                    </Link> */}
 
                   <div className="header__hamburger d-xl-block my-auto">
                     <div className="sidebar__toggle">
@@ -481,7 +480,7 @@ We plan to provide year round cricket training to under-privileged kids and kids
                    
                    <form action="#">
                      <input type="text" placeholder="Your Email Address" />
-                     <Link href="/membership">
+                     <Link href="/login">
                      <button className="theme-btn" type="submit">
                        sign up now <i className="fa-solid fa-arrow-up-right"></i>
                      </button></Link>

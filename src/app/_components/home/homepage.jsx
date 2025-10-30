@@ -3,7 +3,6 @@ import Script from "next/script";
 import React from "react";
 import Link from "next/link";
 
-
 export default function homepage() {
   return (
     <>
@@ -174,23 +173,20 @@ export default function homepage() {
                         </a>
                       </div>
                     </li>
-                    
-                    
                   </ul>
                   <Link href="/membership" className="theme-btn mt-4">
                     JOIN NOW <i className="fa-solid fa-arrow-up-right"></i>
                   </Link>
                   <div className="social-icon d-flex align-items-center">
-                  <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
+                    <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                  <a href="https://x.com/CricketLoversG">
+                    <a href="https://x.com/CricketLoversG">
                       <i className="fab fa-twitter"></i>
                     </a>
-                  <a href="https://www.instagram.com/cricketloversglobal/">
-                    <i className="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/cricketloversglobal/">
+                      <i className="fab fa-instagram"></i>
                     </a>
-                    
                   </div>
                 </div>
               </div>
@@ -220,17 +216,16 @@ export default function homepage() {
                               Home
                             </Link>
                           </li>
-                          <li >
+                          <li>
                             <Link href="/cares">Cares</Link>
                           </li>
                           <li>
-                                <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
-                              </li>
+                            <Link href="https://clgacademy.co.uk/">
+                              Clg-Academy
+                            </Link>
+                          </li>
                           <li className="has-dropdown">
                             <a href="/events"> Events </a>
-                            
-                      
-                            
                           </li>
                           <li>
                             <Link href="/gallery">Gallery</Link>
@@ -247,14 +242,10 @@ export default function homepage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  {/* <Link href="/login" className="theme-btn d-none d-xl-block">
-                    Become a Member{" "}
-                    
-                    <i className="fa-solid fa-arrow-up-right"></i>
-                  </Link> */}
-                  <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
-                      Login <span style={{fontWeight:"40px"}}>/ </span>Signup
-                    </Link>
+                  <Link href="/login" className="theme-btn d-none d-xl-block">
+                    Login/Signup
+                  </Link>
+                  
 
                   <div className="header__hamburger d-xl-block my-auto">
                     <div className="sidebar__toggle">
@@ -277,7 +268,7 @@ export default function homepage() {
           <div className="right-shape">
             <img src="assets/img/home-1/right-shape.png" alt="img" />
           </div>
-          
+
           <div className="container">
             <div className="row g-4 align-items-center">
               <div className="col-lg-6">
@@ -320,163 +311,74 @@ export default function homepage() {
           </div>
         </section>
 
-        {/* Match  Section Start*/}
-        <section className="match-section fix section-padding">
+        {/* About Section Start*/}
+
+        <section className="about-section-2 section-padding">
+          <div className="vec-shape">
+            <img src="assets/img/home-2/about/vec-shape.png" alt="img" />
+          </div>
           <div className="container">
-            <div className="row g-4 tv-desti-content">
-              <div className="col-xl-4 col-lg-6 col-md-6">
-                <div className="match-box-items tv-desti-item">
-                  <h3>LAST MATCH</h3>
-                  <h4>Min 24 Sep 2023</h4>
-                  <p>Premier League , The Legend Stadium</p>
-                  <div className="match-schedule">
-                    <div className="flag-item">
-                      <img src="assets/img/home-1/newzeland.png" alt="img" />
-                      <span>Australia</span>
-                    </div>
-                    <div className="match-date">
-                      <span>02.01</span>
-                    </div>
-                    <div className="flag-item">
-                      <img src="assets/img/home-1/newzeland.png" alt="img" />
-                      <span>Bangladesh</span>
-                    </div>
-                  </div>
-                  <div className="match-btn">
-                    <a href="ticket.html" className="theme-btn">
-                      BUY TICKET
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M4.1386 14.2597C3.74807 14.6502 3.74807 15.2834 4.1386 15.6739C4.52912 16.0644 5.16229 16.0644 5.55281 15.6739L4.8457 14.9668L4.1386 14.2597ZM17.7793 3.03316C17.7793 2.48088 17.3316 2.03316 16.7793 2.03316L7.77934 2.03316C7.22705 2.03316 6.77934 2.48088 6.77934 3.03316C6.77934 3.58544 7.22706 4.03316 7.77934 4.03316L15.7793 4.03316L15.7793 12.0332C15.7793 12.5854 16.2271 13.0332 16.7793 13.0332C17.3316 13.0332 17.7793 12.5854 17.7793 12.0332L17.7793 3.03316ZM4.8457 14.9668L5.55281 15.6739L17.4864 3.74027L16.7793 3.03316L16.0722 2.32605L4.1386 14.2597L4.8457 14.9668Z"
-                          fill="white"
+            <div className="about-wrapper-2">
+              <div className="row">
+                <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                  <div className="about-image-items">
+                    <div className="about-image">
+                      <img
+                        src="assets/img/home-2/about/about-01.png"
+                        alt="img"
+                      />
+                      <div className="text-circle">
+                        <img
+                          src="assets/img/home-2/about/circle-text.png"
+                          alt="img"
                         />
-                      </svg>
-                    </a>
-                    <a href="ticket.html" className="theme-btn style-2">
-                      STREAMING
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M4.1386 14.2597C3.74807 14.6502 3.74807 15.2834 4.1386 15.6739C4.52912 16.0644 5.16229 16.0644 5.55281 15.6739L4.8457 14.9668L4.1386 14.2597ZM17.7793 3.03316C17.7793 2.48088 17.3316 2.03316 16.7793 2.03316L7.77934 2.03316C7.22705 2.03316 6.77934 2.48088 6.77934 3.03316C6.77934 3.58544 7.22706 4.03316 7.77934 4.03316L15.7793 4.03316L15.7793 12.0332C15.7793 12.5854 16.2271 13.0332 16.7793 13.0332C17.3316 13.0332 17.7793 12.5854 17.7793 12.0332L17.7793 3.03316ZM4.8457 14.9668L5.55281 15.6739L17.4864 3.74027L16.7793 3.03316L16.0722 2.32605L4.1386 14.2597L4.8457 14.9668Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
+                        <div className="ball-cicrle">
+                          <img src="assets/images/Ball3.jpg" alt="img/" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6">
-                <div className="match-box-items tv-desti-item">
-                  <h3>NEXT MATCH</h3>
-                  <h4>Min 24 Sep 2023</h4>
-                  <p>Premier League , The Legend Stadium</p>
-                  <div className="match-schedule">
-                    <div className="flag-item">
-                      <img src="assets/img/home-1/newzeland.png" alt="img" />
-                      <span>Englan</span>
+                <div className="col-lg-6">
+                  <div className="about-content">
+                    <div className="section-title mb-0">
+                      {/* <h6 className="wow fadeInUp">About</h6> */}
+                      <h2 className="hero_title tv_hero_title hero_title_1">
+                        What is <span>Cricket Lovers Global?</span>
+                      </h2>
                     </div>
-                    <div className="match-date">
-                      <span>19.45</span>
-                    </div>
-                    <div className="flag-item">
-                      <img src="assets/img/home-1/newzeland.png" alt="img" />
-                      <span>India</span>
-                    </div>
-                  </div>
-                  <div className="match-btn">
-                    <a href="ticket.html" className="theme-btn">
-                      BUY TICKET
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M4.1386 14.2597C3.74807 14.6502 3.74807 15.2834 4.1386 15.6739C4.52912 16.0644 5.16229 16.0644 5.55281 15.6739L4.8457 14.9668L4.1386 14.2597ZM17.7793 3.03316C17.7793 2.48088 17.3316 2.03316 16.7793 2.03316L7.77934 2.03316C7.22705 2.03316 6.77934 2.48088 6.77934 3.03316C6.77934 3.58544 7.22706 4.03316 7.77934 4.03316L15.7793 4.03316L15.7793 12.0332C15.7793 12.5854 16.2271 13.0332 16.7793 13.0332C17.3316 13.0332 17.7793 12.5854 17.7793 12.0332L17.7793 3.03316ZM4.8457 14.9668L5.55281 15.6739L17.4864 3.74027L16.7793 3.03316L16.0722 2.32605L4.1386 14.2597L4.8457 14.9668Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
-                    <a href="ticket.html" className="theme-btn style-2">
-                      STREAMING
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M4.1386 14.2597C3.74807 14.6502 3.74807 15.2834 4.1386 15.6739C4.52912 16.0644 5.16229 16.0644 5.55281 15.6739L4.8457 14.9668L4.1386 14.2597ZM17.7793 3.03316C17.7793 2.48088 17.3316 2.03316 16.7793 2.03316L7.77934 2.03316C7.22705 2.03316 6.77934 2.48088 6.77934 3.03316C6.77934 3.58544 7.22706 4.03316 7.77934 4.03316L15.7793 4.03316L15.7793 12.0332C15.7793 12.5854 16.2271 13.0332 16.7793 13.0332C17.3316 13.0332 17.7793 12.5854 17.7793 12.0332L17.7793 3.03316ZM4.8457 14.9668L5.55281 15.6739L17.4864 3.74027L16.7793 3.03316L16.0722 2.32605L4.1386 14.2597L4.8457 14.9668Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6">
-                <div className="match-box-items tv-desti-item">
-                  <h3>UPCOMMING MATCH</h3>
-                  <h4>Min 24 Sep 2023</h4>
-                  <p>Premier League , The Legend Stadium</p>
-                  <div className="match-schedule">
-                    <div className="flag-item">
-                      <img src="assets/img/home-1/newzeland.png" alt="img" />
-                      <span>Chelsea</span>
-                    </div>
-                    <div className="match-date">
-                      <span>19.45</span>
-                    </div>
-                    <div className="flag-item">
-                      <img src="assets/img/home-1/newzeland.png" alt="img" />
-                      <span>Aston Villa</span>
-                    </div>
-                  </div>
-                  <div className="match-btn">
-                    <a href="ticket.html" className="theme-btn">
-                      BUY TICKET
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M4.1386 14.2597C3.74807 14.6502 3.74807 15.2834 4.1386 15.6739C4.52912 16.0644 5.16229 16.0644 5.55281 15.6739L4.8457 14.9668L4.1386 14.2597ZM17.7793 3.03316C17.7793 2.48088 17.3316 2.03316 16.7793 2.03316L7.77934 2.03316C7.22705 2.03316 6.77934 2.48088 6.77934 3.03316C6.77934 3.58544 7.22706 4.03316 7.77934 4.03316L15.7793 4.03316L15.7793 12.0332C15.7793 12.5854 16.2271 13.0332 16.7793 13.0332C17.3316 13.0332 17.7793 12.5854 17.7793 12.0332L17.7793 3.03316ZM4.8457 14.9668L5.55281 15.6739L17.4864 3.74027L16.7793 3.03316L16.0722 2.32605L4.1386 14.2597L4.8457 14.9668Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
-                    <a href="ticket.html" className="theme-btn style-2">
-                      STREAMING
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M4.1386 14.2597C3.74807 14.6502 3.74807 15.2834 4.1386 15.6739C4.52912 16.0644 5.16229 16.0644 5.55281 15.6739L4.8457 14.9668L4.1386 14.2597ZM17.7793 3.03316C17.7793 2.48088 17.3316 2.03316 16.7793 2.03316L7.77934 2.03316C7.22705 2.03316 6.77934 2.48088 6.77934 3.03316C6.77934 3.58544 7.22706 4.03316 7.77934 4.03316L15.7793 4.03316L15.7793 12.0332C15.7793 12.5854 16.2271 13.0332 16.7793 13.0332C17.3316 13.0332 17.7793 12.5854 17.7793 12.0332L17.7793 3.03316ZM4.8457 14.9668L5.55281 15.6739L17.4864 3.74027L16.7793 3.03316L16.0722 2.32605L4.1386 14.2597L4.8457 14.9668Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
+                    <p className="about-text wow fadeInUp" data-wow-delay=".3s">
+                      As the tag line “Passion Beyond Boundaries” suggests, it’s
+                      a place for everyone in love with the sport irrespective
+                      of the franchise or country you support. It’s nothing else
+                      but the passion that binds this community together. As
+                      part of CLG (
+                      <span style={{ color: "Red" }}>
+                        Cricket Lovers Global
+                      </span>
+                      ), you are first a lover of the sport and then a follower
+                      of your franchise or country cricket team. We at Cricket
+                      Lovers Global take pride in equally supporting men and
+                      women cricket. In fact, promoting and creating awareness
+                      about women cricket is very close to our heart. We also
+                      encourage more and more youngsters to take up the sport.
+                      If you live and breathe cricket day in and day out, then
+                      you have landed at the right place. Check out our
+                      membership page (link) on how you can become a member of
+                      this ever-growing community.
+                    </p>
+                    {/* <h5 class="wow fadeInUp" data-wow-delay=".5s">GREATNESS STARTS HERE.</h5>
+                                        <div class="text-area wow fadeInUp" data-wow-delay=".7s">
+                                            <h3>/05:01</h3>
+                                            <p>Player -To- Cooch Ratio</p>
+                                        </div> */}
+                    <Link
+                      href="/membership"
+                      className="theme-btn wow fadeInUp"
+                      data-wow-delay=".8s"
+                    >
+                      Join now <i className="fa-solid fa-arrow-up-right"></i>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -678,103 +580,7 @@ export default function homepage() {
             </div>
           </div>
         </section>
-
-        {/* Ticket Section Start*/}
-
-        {/* Testimonial Section Start  */}
-        <section
-          className="testimonial-section-4 fix bg-cover "
-          style={{
-            backgroundImage: "url('assets/img/inner/testimonial-bg.jpg')",
-          }}
-        >
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className="swiper testimonial-slider-3">
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial-box-4">
-                        <p style={{ color: "white" }}>
-                          The itinerary had a spot for Nottingham, but the rain
-                          god had something else for her. The match was washed
-                          away but Cricket Lovers Global made sure the vibes
-                          were on and she had loads on her memory plate. Now she
-                          hopes to see the CLG ambassadors in T20 World Cup as
-                          well. The girl here is Supriya Katiyal proudly from
-                          Dhoni's town and working in Hyderabad with JP Morgan
-                          Chase.””
-                        </p>
-                        <div className="client-info">
-                          <img src="assets/img/inner/client.png" alt="img" />
-                          <div className="info-content">
-                            <h4>Pritam</h4>
-                            <p>CLG member</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="testimonial-box-4">
-                        <p style={{ color: "white" }}>
-                          They make sure that tickets are available at the
-                          listed price or they try to arrange tickets for the
-                          match and if you happen to sit with them then you are
-                          up for a great treat with masala chai and food and
-                          their welcoming nature. The group has bigger plans to
-                          get all Cricket lovers together across the globe.
-                          Their Facebook pages always have pictures of Fans in
-                          the stadium whenever there is a match going 8000 km,
-                          10 hours, 2 stops and a girl landed in the UK to see
-                          her dreams turning true.
-                        </p>
-                        <div className="client-info">
-                          <img src="assets/img/inner/client.png" alt="img" />
-                          <div className="info-content">
-                            <h4>Supriya</h4>
-                            <p>CLG member</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="testimonial-box-4">
-                        <p style={{ color: "white" }}>
-                          "Cricket lovers global is an awesome group of Cricket
-                          lovers across countries. I started going with their
-                          group of friends to the World cup 2019 in England and
-                          the experience was amazing. Everyone has a passion for
-                          cricket and they all are die-hard fans. We used to sit
-                          in groups and enjoy watching matches and have great
-                          discussions and celebrate wins and even take losses of
-                          the Indian Cricket team wholeheartedly.On the WhatsApp
-                          group, we do heated discussions about selections, IPL,
-                          why some players are not performing etc. The
-                          organisers of the group Piyush and Rahul are a great
-                          bunch of guys with infinite love for cricket. "
-                        </p>
-                        <div className="client-info">
-                          <img src="assets/images/profile1a.jpg" alt="img" />
-                          <div className="info-content">
-                            <h4>Pritam</h4>
-                            <p>CLG member</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 mt-4 mt-lg-0">
-                <div className="testimonial-image">
-                  <img src="assets/img/inner/testimonial-image.jpg" alt="img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section Start*/}
+{/* Team Section Start*/}
         <section className="team-section fix section-padding">
           <div className="container">
             <div className="section-title-area">
@@ -997,128 +803,223 @@ export default function homepage() {
             </div>
           </div>
         </section>
+        
+
+        {/* Testimonial Section Start  */}
+        <section
+          className="testimonial-section-4 fix bg-cover "
+          style={{
+            backgroundImage: "url('assets/img/inner/testimonial-bg.jpg')",
+          }}
+        >
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="swiper testimonial-slider-3">
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                      <div className="testimonial-box-4">
+                        <p style={{ color: "white" }}>
+                          The itinerary had a spot for Nottingham, but the rain
+                          god had something else for her. The match was washed
+                          away but Cricket Lovers Global made sure the vibes
+                          were on and she had loads on her memory plate. Now she
+                          hopes to see the CLG ambassadors in T20 World Cup as
+                          well. The girl here is Supriya Katiyal proudly from
+                          Dhoni's town and working in Hyderabad with JP Morgan
+                          Chase.””
+                        </p>
+                        <div className="client-info">
+                          <img src="assets/img/inner/client.png" alt="img" />
+                          <div className="info-content">
+                            <h4>Pritam</h4>
+                            <p>CLG member</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="testimonial-box-4">
+                        <p style={{ color: "white" }}>
+                          They make sure that tickets are available at the
+                          listed price or they try to arrange tickets for the
+                          match and if you happen to sit with them then you are
+                          up for a great treat with masala chai and food and
+                          their welcoming nature. The group has bigger plans to
+                          get all Cricket lovers together across the globe.
+                          Their Facebook pages always have pictures of Fans in
+                          the stadium whenever there is a match going 8000 km,
+                          10 hours, 2 stops and a girl landed in the UK to see
+                          her dreams turning true.
+                        </p>
+                        <div className="client-info">
+                          <img src="assets/img/inner/client.png" alt="img" />
+                          <div className="info-content">
+                            <h4>Supriya</h4>
+                            <p>CLG member</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="swiper-slide">
+                      <div className="testimonial-box-4">
+                        <p style={{ color: "white" }}>
+                          "Cricket lovers global is an awesome group of Cricket
+                          lovers across countries. I started going with their
+                          group of friends to the World cup 2019 in England and
+                          the experience was amazing. Everyone has a passion for
+                          cricket and they all are die-hard fans. We used to sit
+                          in groups and enjoy watching matches and have great
+                          discussions and celebrate wins and even take losses of
+                          the Indian Cricket team wholeheartedly.On the WhatsApp
+                          group, we do heated discussions about selections, IPL,
+                          why some players are not performing etc. The
+                          organisers of the group Piyush and Rahul are a great
+                          bunch of guys with infinite love for cricket. "
+                        </p>
+                        <div className="client-info">
+                          <img src="assets/images/profile1a.jpg" alt="img" />
+                          <div className="info-content">
+                            <h4>Pritam</h4>
+                            <p>CLG member</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 mt-4 mt-lg-0">
+                <div className="testimonial-image">
+                  <img src="assets/img/inner/testimonial-image.jpg" alt="img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
 
         {/* Footer Section Start*/}
-      <footer
-        className="footer-section section-padding pb-0 bg-cover"
-        style={{
-          backgroundImage: "url('assets/img/home-1/footer-bg.jpg')",
-        }}
-      >
-        <div className="container">
-          <div
-            className="footer-subscribe-wrapper wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <h3>
-              Join <br /> Cricket Lovers Global <br /> Newsletter​
-            </h3>
-            
-            <form action="#">
-              <input type="text" placeholder="Your Email Address" />
-              <Link href="/membership">
-              <button className="theme-btn" type="submit">
-                sign up now <i className="fa-solid fa-arrow-up-right"></i>
-              </button></Link>
-            </form>
-            <div className="footer-right">
+        <footer
+          className="footer-section section-padding pb-0 bg-cover"
+          style={{
+            backgroundImage: "url('assets/img/home-1/footer-bg.jpg')",
+          }}
+        >
+          <div className="container">
+            <div
+              className="footer-subscribe-wrapper wow fadeInUp"
+              data-wow-delay=".3s"
+            >
               <h3>
-                Follow our <br />
+                Join <br /> Cricket Lovers Global <br /> Newsletter​
               </h3>
-              <h3>social network</h3>
-              <div className="social-right">
-                <div className="social-icon d-flex align-items-center">
-                  <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://x.com/CricketLoversG">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="https://www.instagram.com/cricketloversglobal/">
-  <i className="fab fa-instagram"></i>
-                  </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="footer-widget-wrapper">
-            <div className="row justify-content-between">
-              <div
-                className="col-xl-4 col-lg-8 col-md-8 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="footer-widget-items">
-                  <div className="widget-head">
-                    <a href="index.html">
-                      <img src="assets/images/LogoBase2.png" alt="img" />
+
+              <form action="#">
+                <input type="text" placeholder="Your Email Address" />
+                <Link href="/login">
+                  <button className="theme-btn" type="submit">
+                    sign up now <i className="fa-solid fa-arrow-up-right"></i>
+                  </button>
+                </Link>
+              </form>
+              <div className="footer-right">
+                <h3>
+                  Follow our <br />
+                </h3>
+                <h3>social network</h3>
+                <div className="social-right">
+                  <div className="social-icon d-flex align-items-center">
+                    <a href="https://www.facebook.com/p/Cricket-Lovers-Global-100063728492925/">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/CricketLoversG">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cricketloversglobal/">
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="footer-content">
-                    <p className="mb-3">Passion beyond boundaries.</p>
-                  </div>
                 </div>
-              </div>
-              <div
-                className="col-xl-2 ps-lg-5 col-lg-4 col-md-4 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div className="footer-widget-items">
-                  <div className="widget-head">
-                    <h3>Our Links</h3>
-                  </div>
-                  <ul className="list-area">
-                    <li>
-                      <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                      <Link href="/membership">Membership</Link>
-                    </li>
-                    <li>
-                      <Link href="/events">Events</Link>
-                    </li>
-                    <li>
-                      <Link href="https://clgacademy.co.uk/">CLG Academy</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                <div className="footer-widget-items">
-                  <div className="widget-head">
-                    <h3>Get in Touch </h3>
-                  </div>
-                  <ul className="footer-contact-list">
-                    <li>
-                      <Link href="/contact"> Contact us</Link>
-                    </li>
-                    <li>
-                      <a href="info@cricketloversglobal.com">
-                        info@cricketloversglobal.com
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-                data-wow-delay=".8s"
-              >
-                
               </div>
             </div>
+            <div className="footer-widget-wrapper">
+              <div className="row justify-content-between">
+                <div
+                  className="col-xl-4 col-lg-8 col-md-8 wow fadeInUp"
+                  data-wow-delay=".2s"
+                >
+                  <div className="footer-widget-items">
+                    <div className="widget-head">
+                      <a href="index.html">
+                        <img src="assets/images/LogoBase2.png" alt="img" />
+                      </a>
+                    </div>
+                    <div className="footer-content">
+                      <p className="mb-3">Passion beyond boundaries.</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-xl-2 ps-lg-5 col-lg-4 col-md-4 wow fadeInUp"
+                  data-wow-delay=".4s"
+                >
+                  <div className="footer-widget-items">
+                    <div className="widget-head">
+                      <h3>Our Links</h3>
+                    </div>
+                    <ul className="list-area">
+                      <li>
+                        <Link href="/about">About</Link>
+                      </li>
+                      <li>
+                        <Link href="/membership">Membership</Link>
+                      </li>
+                      <li>
+                        <Link href="/events">Events</Link>
+                      </li>
+                      <li>
+                        <Link href="https://clgacademy.co.uk/">
+                          CLG Academy
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay=".6s"
+                >
+                  <div className="footer-widget-items">
+                    <div className="widget-head">
+                      <h3>Get in Touch </h3>
+                    </div>
+                    <ul className="footer-contact-list">
+                      <li>
+                        <Link href="/contact"> Contact us</Link>
+                      </li>
+                      <li>
+                        <a href="info@cricketloversglobal.com">
+                          info@cricketloversglobal.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay=".8s"
+                ></div>
+              </div>
+            </div>
+            <div className="footer-bottom">
+              <p className="wow fadeInLeft" data-wow-delay=".3s">
+                © 2025<b> CRICKET LOVERS GLOBAL</b>. All Rights Reserved.
+              </p>
+            </div>
           </div>
-          <div className="footer-bottom">
-            <p className="wow fadeInLeft" data-wow-delay=".3s">
-              © 2025<b> CRICKET LOVERS GLOBAL</b>. All Rights Reserved.
-            </p>
-            
-          </div>
-        </div>
-      </footer>
+        </footer>
       </div>
     </>
   );

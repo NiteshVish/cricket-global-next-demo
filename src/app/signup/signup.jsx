@@ -1,12 +1,38 @@
 "use client";
+import authInstance from "@/api/auth/auth.api";
+import axios from "axios";
 import React, { useState } from "react";
 
 export default function Page() {
+  const countries = [
+  { code: "", name: "Select your country" },
+  { code: "India", name: "India" },
+  { code: "United States", name: "United States" },
+  { code: "United Kingdom", name: "United Kingdom" },
+  { code: "Australia", name: "Australia" },
+  { code: "Canada", name: "Canada" },
+  { code: "New Zealand", name: "New Zealand" },
+  { code: "South Africa", name: "South Africa" },
+  { code: "Pakistan", name: "Pakistan" },
+  { code: "Bangladesh", name: "Bangladesh" },
+  { code: "Sri Lanka", name: "Sri Lanka" },
+  { code: "Other", name: "Other" },
+];
+
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [error, setError] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [gender, setGender] = useState("");
+  const [country, setCountry] = useState("");
+  const [email, setEmail] = useState("");
+const [emailError, setEmailError] = useState("");
 
-  const handleSubmit = (e) => {
+
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
@@ -15,7 +41,38 @@ export default function Page() {
     }
 
     setError("");
-    alert("Signup Successful ✅");
+    setLoading(true);
+
+    const reqbody={
+          firstName: firstName,
+          lastName: lastName,
+          gender,
+          country,
+          email,
+          password,
+        }
+    try {
+      console.log("reqbody-----", reqbody);
+      const res = await authInstance.signup(reqbody)
+      console.log("res---------", res)
+
+      setLoading(false);
+
+      if (!res.ok) {
+        setError(data.message || "Signup failed ❌");
+        return;
+      }
+
+     
+
+      alert("Signup Successful ✅");
+      window.location.href = "/login";  
+
+    } catch (err) {
+      console.error(err);
+      // setError("Something went wrong ❌");
+      setLoading(false);
+    }
   };
 
   return (
@@ -30,51 +87,54 @@ export default function Page() {
           <h3>SIGN UP</h3>
 
           <form onSubmit={handleSubmit}>
-
-            {/* Row 1 */}
             <div className="row1">
               <div className="input-group1">
                 <label>FIRSTNAME</label>
-                <input type="text" placeholder="Enter your first name" required />
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  required
+                />
               </div>
+
               <div className="input-group1">
                 <label>LASTNAME</label>
-                <input type="text" placeholder="Enter your last name" required />
+                <input
+                  type="text"
+                  placeholder="Enter your last name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  required
+                />
               </div>
             </div>
 
-            {/* Row 2 */}
             <div className="row1">
-                <div className="input-group1">
+              <div className="input-group1">
                 <label>GENDER</label>
-                <select required>
+                <select value={gender} onChange={(e) => setGender(e.target.value)} required>
                   <option value="">Select gender</option>
-                  <option value="M">Male</option>
-                  <option value="F">Female</option>
-                  <option value="O">Other</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
-              
+
               <div className="input-group1">
                 <label>COUNTRY</label>
-                <select required>
-                  <option value="">Select your country</option>
-                  <option value="IN">India</option>
-                  <option value="US">United States</option>
-                  <option value="UK">United Kingdom</option>
-                  <option value="AU">Australia</option>
-                  <option value="CA">Canada</option>
-                  <option value="NZ">New Zealand</option>
-                  <option value="SA">South Africa</option>
-                  <option value="PK">Pakistan</option>
-                  <option value="BD">Bangladesh</option>
-                  <option value="SL">Sri Lanka</option>
-                  <option value="OTHER">Other</option>
-                </select>
+                <select value={country} onChange={(e) => setCountry(e.target.value)} required>
+  {countries.map((c) => (
+    <option key={c.code} value={c.code}>
+      {c.name}
+    </option>
+  ))}
+</select>
+
               </div>
             </div>
 
-            {/* Row 3 */}
             <div className="row1">
               <div className="input-group1">
                 <label>PASSWORD</label>
@@ -84,13 +144,6 @@ export default function Page() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className={
-                    password &&
-                    confirmPassword &&
-                    password !== confirmPassword
-                      ? "input-error"
-                      : ""
-                  }
                 />
               </div>
 
@@ -102,33 +155,49 @@ export default function Page() {
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
-                  className={
-                    password &&
-                    confirmPassword &&
-                    password !== confirmPassword
-                      ? "input-error1"
-                      : ""
-                  }
                 />
               </div>
             </div>
 
             {error && (
-              <p style={{ color: "red", marginTop: "-8px", fontSize: "14px" }}>
+              <p style={{ color: "red", fontSize: "14px", marginTop: "-8px" }}>
                 {error}
               </p>
             )}
 
-            {/* Row 4 */}
             <div className="row1">
               <div className="input-group1">
                 <label>EMAIL</label>
-                <input type="email" placeholder="Enter your email" required />
+                <input
+  type="email"
+  placeholder="Enter your email"
+  value={email}
+  onChange={(e) => {
+    const val = e.target.value.trim().toLowerCase();
+    setEmail(val);
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(val)) {
+      setEmailError("Please enter a valid email");
+    } else {
+      setEmailError("");
+    }
+  }}
+  required
+  className={emailError ? "input-error" : ""}
+/>
+{emailError && (
+  <p style={{ color: "red", fontSize: "13px", marginTop: "3px" }}>
+    {emailError}
+  </p>
+)}
+
               </div>
-              
             </div>
 
-            <button type="submit" className="btn1">Sign Up</button>
+            <button type="submit" className="btn1" disabled={loading}>
+              {loading ? "Processing..." : "Sign Up"}
+            </button>
 
             <p className="signup-text1">
               ALREADY HAVE AN ACCOUNT? <a href="/login">LOGIN</a>

@@ -133,7 +133,8 @@ export default function Membershippage() {
         <div className="offcanvas__overlay"></div>
 
       {/* Header Section Start*/}
-              <header id="header-sticky" className="header-1">
+             
+        <header id="header-sticky" className="header-1">
           <div className="container">
             <div className="mega-menu-wrapper">
               <div className="header-main">
@@ -153,17 +154,16 @@ export default function Membershippage() {
                               Home
                             </Link>
                           </li>
-                          <li >
+                          <li>
                             <Link href="/cares">Cares</Link>
                           </li>
                           <li>
-                                <Link href="https://clgacademy.co.uk/">Clg-Academy</Link>
-                              </li>
+                            <Link href="https://clgacademy.co.uk/">
+                              Clg-Academy
+                            </Link>
+                          </li>
                           <li className="has-dropdown">
                             <a href="/events"> Events </a>
-                            
-                      
-                            
                           </li>
                           <li>
                             <Link href="/gallery">Gallery</Link>
@@ -180,14 +180,10 @@ export default function Membershippage() {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  {/* <Link href="/login" className="theme-btn d-none d-xl-block">
-                    Become a Member{" "}
-                    
-                    <i className="fa-solid fa-arrow-up-right"></i>
-                  </Link> */}
-                  <Link style={{fontWeight:"20"}} href="/login" className="theme-btn">
-                      Login <span style={{fontWeight:"40px"}}>/ </span>Signup
-                    </Link>
+                  <Link href="/login" className="theme-btn d-none d-xl-block">
+                    Login/Signup
+                  </Link>
+                  
 
                   <div className="header__hamburger d-xl-block my-auto">
                     <div className="sidebar__toggle">
