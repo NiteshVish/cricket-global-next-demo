@@ -78,7 +78,7 @@ const [emailError, setEmailError] = useState("");
   return (
     <section className="main-container-login1">
       <div className="container1">
-        <div className="form-box1">
+        <div className="form-box2">
           <img
             src="/assets/images/Logo.webp"
             alt="Cricket Lovers Global Logo"

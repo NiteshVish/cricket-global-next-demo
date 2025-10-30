@@ -8196,6 +8196,14 @@ span {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.form-box2 {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 700px; /* Wider for 2-column layout */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
 /* Logo */
 .logo1 {
