@@ -91,6 +91,8 @@ export default function Login() {
       console.error(err);
       alert("Something went wrong ❌");
       setLoading(false);
+      
+      
     }
   };
 
